@@ -10,6 +10,6 @@ console.log(5);
 
 new Promise(() => console.log(6));
 
-(async () => console.log(7))();
+(async () => console.log(7))().catch(() => console.log(8));
 
-requestAnimationFrame(() => console.log(8));
+requestAnimationFrame(() => console.log(9));
